@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f9f7fe;
+  font-family: "Roboto", sans-serif;
+  margin: 150px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+  display: block;
+}
+.wrapper {
+  background: white;
+  max-width: 600px;
+  margin: 45px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+  padding: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.search-input-space {
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
+.search-button {
+  background: #885df1;
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 6px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-information {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-details {
+  color: rgba(0, 0, 0, 0.6);
+}
+.humidity-value {
+  color: #f65282;
+  font-weight: bolder;
+}
+
+.wind-speed-value {
+  color: #f65282;
+  font-weight: bolder;
+}
+
+.temperature-information {
+  display: flex;
+}
+
+.weather-icon {
+  width: 88px;
+  height: 88px;
+}
+.temperature-value {
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: bold;
+}
+
+.temperature-unit {
+  margin-top: 6px;
+  font-size: 28px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.weather-forecast-day {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+  color: #f65282;
+}
+
+.weather-forecast-temperature-max {
+  font-weight: bold;
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
 }
